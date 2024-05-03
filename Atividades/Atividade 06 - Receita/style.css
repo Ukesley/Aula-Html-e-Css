@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #1E90FF;
+    margin-top: 40px;
+}
+
+main {
+    width: 88%;
+    margin: 0 auto;
+    padding: 20px 70px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#banner h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+}
+
+#banner div {
+    background-image: url(assets/pexels-nikolaos-dimou-1250289.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 315px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#banner p {
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+#banner a {
+    text-decoration: none;
+    background-color: #1E90FF;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.tituloCenter {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.formatacaoLista {
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.formatacaoLista li {
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+#informacoesAdicionais {
+    text-align: center;
+}
+
+#informacoesAdicionais p {
+    margin-top: 20px;
+    text-align: left;
+}
+
+iframe {
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
