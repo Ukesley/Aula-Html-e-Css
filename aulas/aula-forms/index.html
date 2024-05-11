@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+
+        }
+        input:focus {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+
+        <div class="row">
+            <label for="firstname"></label>
+            <input placeholder="Escreva seu nome..." type="text" name="" id="firstname">
+        </div>
+
+        <div class="row">
+            <label for="lastname"></label>
+            <input placeholder="Escreva seu último nome..." type="text" id="lastname" required>
+        </div>
+
+        <div class="row">
+            <label for="psw"></label>
+            <input type="password" name="" id="psw">
+        </div>
+
+        <div class="row">
+            <textarea placeholder="Digite sua mensagem" name="" id="mensagem" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="row">
+            <label for="raca">Raça:</label>
+            <select name="" id="raca">
+                <option value="">Pardo</option>
+                <option value="">Negro</option>
+                <option value="">Indigina</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="cor">Cor:</label>
+            <input type="color" id="cor">
+        </div>
+
+        <div class="row">
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masculino" value="Masculino" name="sexo">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" value="Feminino" name="sexo">
+            <label for="feminino">Feminino</label>
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
