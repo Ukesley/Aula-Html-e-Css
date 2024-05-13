@@ -13,6 +13,7 @@
     --inst: url('img/inst-dark.png');
     --youtube: url('img/yt-dark.png');
     --linkedin: url('img/lkd-dark.png');
+    --corBorda: #EAB2EA;
 }
 
 .darkMode {
@@ -23,6 +24,7 @@
     --inst: url('img/int-light.png');
     --youtube: url('img/yt-light.png');
     --linkedin: url('img/lkd-light.png');
+    --corBorda: #ffffff13;
     color: #fff;
 }
 
@@ -74,16 +76,39 @@ header > p {
     margin-bottom: 15px;
 }
 
+#troca {
+    width: 64px;
+    margin: 4px auto;
+    position: relative;
+}
+
+#btnFundo {
+    width: 64px;
+    height: 24px;
+    background: var(--corBorda);
+    border: 1px solid #ffffffa6;
+    border-radius: 50px;
+}
+
 #btn {
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
+    background: #fff var(--img-btn) no-repeat center;
     border-radius: 50%;
-    background: var(--img-btn);
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     cursor: pointer;
-    transition: 0.5s;
-    margin: 0 auto 15px;
+    animation: slide-back 0.4s;
+}
+
+.darkMode #btn {
+    animation: slide-in 0.4s forwards;
+}
+
+#btn:hover {
+    outline: 8px solid #ffffff13;
 }
 
 ul > li {
@@ -156,6 +181,23 @@ footer {
     margin-top: 100px;
 }
 
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
+}
 
 @media (max-width: 600px) {
     body {
